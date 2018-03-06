@@ -1,0 +1,29 @@
+package konstruktorsparametryzowany;
+
+/**
+ *
+ * @author edzia
+ */
+public class PrzeciazenieMetody {
+    public String trick;
+    public void PrzeciazenieMetody()
+{
+ trick = "Przeciazam metode po raz:";
+ System.out.println(trick);
+}
+public void PrzeciazenieMetody(String pierwszy)
+{
+ trick = "Przeciazam metode po raz:" + pierwszy;
+ System.out.println(trick);
+}
+public void PrzeciazenieMetody(int pierwszy, int drugi)
+{
+ trick = "Przeciazam metode po raz:" + pierwszy + drugi;
+ System.out.println(trick);
+}
+public void PrzeciazenieMetody(double pierwszy, double drugi, double trzeci)
+{
+ trick = "Przeciazam metode po raz:" + pierwszy + drugi + trzeci;
+ System.out.println(trick);
+}
+}
