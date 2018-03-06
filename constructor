@@ -1,0 +1,39 @@
+package konstruktorsparametryzowany;
+import konstruktorsparametryzowany.PrzeciazenieMetody;
+
+public class KonstruktorSparametryzowany {
+
+public String message; // zmienna do wyświetlania treści
+public String trick;
+public KonstruktorSparametryzowany (){
+    message= "Dana osoba to:" ;
+    System.out.println(message); 
+};
+public KonstruktorSparametryzowany (String imie){
+    message= "Dana osoba to:" + imie;
+    System.out.println(message); 
+};
+public KonstruktorSparametryzowany (String imie, String nazwisko){
+    message= "Dana osoba to:" + imie + nazwisko;
+    System.out.println(message); 
+};
+public KonstruktorSparametryzowany (String imie, String nazwisko, String narodowosc){
+    message= "Dana osoba to:" + imie + nazwisko + narodowosc;
+    System.out.println(message); 
+};
+
+public static void main(String[] args) {
+     
+    KonstruktorSparametryzowany one = new KonstruktorSparametryzowany ("Donald ", "Trump ", "American");
+       // na ekranie pojawi się Dana osoba to : Donald Trump American
+      KonstruktorSparametryzowany two = new KonstruktorSparametryzowany ("Amba ","Lama ","Ukraine");
+      // na eranie pojawi sie Dana osoba to: Amba Lama Ukraine
+      PrzeciazenieMetody onee = new PrzeciazenieMetody();
+      onee.PrzeciazenieMetody();
+      onee.PrzeciazenieMetody("raz");
+      onee.PrzeciazenieMetody(1,2 );
+      onee.PrzeciazenieMetody(3,2,1);
+      
+  
+}
+}
